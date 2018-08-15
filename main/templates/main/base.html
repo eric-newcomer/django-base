@@ -14,7 +14,7 @@
     <link href="{% static 'main/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{% static 'main/css/carousel.css' %}" rel="stylesheet">
+    <link href="{% static 'main/css/carousel.css' %}" rel="stylesheet">{% block pageHeader %} {% endblock pageHeader %}
   </head>
   <body>
 
@@ -183,6 +183,6 @@
     <script src="{% static 'js/vendor/popper.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="{% static 'js/vendor/holder.min.js' %}"></script>
+    <script src="{% static 'js/vendor/holder.min.js' %}"></script>{% block pageScripts %} {% endblock pageScripts %}
   </body>
 </html>
