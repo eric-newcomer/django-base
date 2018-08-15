@@ -22,7 +22,9 @@
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#">Django-Base</a>
+            <a class="navbar-brand" href="/">
+                <strong>Django-Base</strong>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,19 +32,19 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
+                        <a class="nav-link" href="/">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    {% comment %} <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
-                    </li>
+                    </li> {% endcomment %}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="/about/">What is Django-Base?</a>
+                            <a class="dropdown-item" href="https://github.com/hack4impact-calpoly/django-base" target="_blank">Repository for this website</a>
+                            <a class="dropdown-item" href="https://hack4impact.org/" target="blank">About Hack4Impact</a>
                         </div>
                     </li>
                 </ul>
@@ -67,11 +69,10 @@
                     <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
                     <div class="container">
                         <div class="carousel-caption text-left">
-                            <h1>Example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
-                                at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <h1>Django-Base</h1>
+                            <p>A Django web application with the boilerplate code already done for you.</p>
                             <p>
-                                <a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a>
+                                <a class="btn btn-lg btn-primary" href="#" role="button">About this project</a>
                             </p>
                         </div>
                     </div>
@@ -173,7 +174,8 @@
                     </h2>
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
                         Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-                        commodo.</p>
+                        commodo.
+                    </p>
                 </div>
                 <div class="col-md-5">
                     <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -189,7 +191,8 @@
                     </h2>
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
                         Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-                        commodo.</p>
+                        commodo.
+                    </p>
                 </div>
                 <div class="col-md-5 order-md-1">
                     <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -205,7 +208,8 @@
                     </h2>
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
                         Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-                        commodo.</p>
+                        commodo.
+                    </p>
                 </div>
                 <div class="col-md-5">
                     <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -237,14 +241,19 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="{% static 'js/vendor/popper.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="{% static 'js/vendor/holder.min.js' %}"></script>
     <script>
         $(document).ready(function () {
             $('.dropdown-toggle').dropdown();
         });
-    </script>
-    <script src="{% static 'js/vendor/holder.min.js' %}"></script>{% block pageScripts %} {% endblock pageScripts %}
+    </script>{% block pageScripts %} {% endblock pageScripts %}
 </body>
 
 </html>
