@@ -1,1 +1,1 @@
-django_base/* linguist-language=Python
+*.rb linguist-language=python
