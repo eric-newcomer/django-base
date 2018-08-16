@@ -1,6 +1,28 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 
+.banner {
+    background-image: url("../images/mac_edited.jpg");
+    height: 20rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.base-text {
+    color: white;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.col-lg-8 {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
 /* Padding below the footer and lighter body text */
 
 body {
