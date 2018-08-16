@@ -3,7 +3,7 @@ A Django web application with the boilerplate code already done for you.
 
 Built with Django 2.
 
-Django Documentation: https://docs.djangoproject.com/en/2.0/
+Django Documentation: https://docs.djangoproject.com/en/2.1/
 
 Currently a work in progress. 
 
