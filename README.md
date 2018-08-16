@@ -1,4 +1,4 @@
-# Django-Base
+# django-base
 A Django web application with the boilerplate code already done for you.
 
 Built with Django 2.
@@ -38,10 +38,13 @@ $ source venv/bin/activate
 $ git clone https://github.com/hack4impact-calpoly/django-base.git
 $ cd django-base
 ```
-#### Run the server
+#### Running the app
 * Make sure you're in the root directory (the directory with `manage.py`)
 * Run the server with:
 ```
 $ python manage.py runserver
 ```
 #### Now go to http://localhost:8000 to view the site!
+
+## License
+[MIT License](LICENSE.md)
