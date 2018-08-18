@@ -1,0 +1,36 @@
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+class App extends Component {
+  state = {
+    users: []
+  };
+
+  async componentDidMount() {
+    try {
+      const res = await fetch('http://127.0.0.1:8000/api/');
+      const users = await res.json();
+      this.setState({
+        users
+      });
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        {this.state.users.map(item => (
+          <div key={item.id}>
+            <h1>{item.first_name} {item.last_name}</h1>
+            <span>{item.email}</span>
+          </div>
+        ))}
+      </div>
+    );
+  }
+}
+
+export default App;
