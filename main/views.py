@@ -49,10 +49,14 @@ def logout_view(request):
     logout(request)
     return redirect('/login')
 
-@login_required
-def index(request):
-    return render(request, 'main/home.html')
 
-@login_required
+def index(request):
+    user = request.user
+    context = {
+        'user': user,
+    }
+    return render(request, 'main/home.html', context)
+
+
 def about(request):
     return render(request, 'main/about.html')
