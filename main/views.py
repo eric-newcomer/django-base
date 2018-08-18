@@ -5,7 +5,20 @@ from .forms import SignUpForm, UserForm
 from .backend import authenticate
 from django.views import View
 from django.contrib.auth.decorators import login_required
+from rest_framework import generics
+from django.contrib.auth.models import User
+from .serializers import UserSerializer
 # Create your views here.
+
+
+class ListUsers(generics.ListCreateAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
+class DetailUser(generics.RetrieveUpdateDestroyAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
 
 def signup(request):
     if request.method == 'POST':
