@@ -35,6 +35,10 @@ $ venv\Scripts\activate
 ```
 $ source venv/bin/activate
 ```
+#### Install Django
+```
+pip install django
+```
 #### Clone the repo
 ```
 $ git clone https://github.com/hack4impact-calpoly/django-base.git
