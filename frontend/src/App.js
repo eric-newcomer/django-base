@@ -26,6 +26,7 @@ class App extends Component {
           <div key={item.id}>
             <h1>{item.first_name} {item.last_name}</h1>
             <span>{item.email}</span>
+            <h3>Currently using React {React.version}</h3>
           </div>
         ))}
       </div>
