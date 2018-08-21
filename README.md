@@ -7,7 +7,7 @@ Built with React, Django, Django REST Framework, and PostgreSQL.
 
 Django Documentation: https://docs.djangoproject.com/en/2.1/
 
-Currently a work in progress. 
+**Currently a work in progress.** 
 
 ## Environment
 * Python 3.6+ - Install here: https://www.python.org/downloads/
