@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './bootstrap.min.css';
+import './carousel.css';
+import './signinsignup.css'
 import Home from './components/Home';
 
 class App extends Component {

@@ -7,7 +7,7 @@ class Home extends Component {
             <div id="myCarousel" className="carousel slide" data-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img className="first-slide" src="{% static 'main/images/mac_edited.jpg' %}" alt="First slide" />
+                        <img className="first-slide" src="images/mac_edited.jpg" alt="First slide" />
                         <div className="container">
                             <div className="carousel-caption text-left">
                                 <h1>Django-Base</h1>
