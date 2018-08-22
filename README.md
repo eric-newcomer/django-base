@@ -3,7 +3,7 @@
 # django-base
 A Django web application with the boilerplate code already done for you.
 
-Built with React, Django, Django REST Framework, and PostgreSQL.
+Built with Python, Django, and PostgreSQL.
 
 Django Documentation: https://docs.djangoproject.com/en/2.1/
 
