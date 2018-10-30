@@ -9,9 +9,10 @@ Django Documentation: https://docs.djangoproject.com/en/2.1/
 
 **Currently a work in progress.** 
 
-## Environment
+## Requirements
 * Python 3.6+ - Install here: https://www.python.org/downloads/
-* Django 2.1 - Install within virtual environment (See "Setup Guide") 
+* Pip (Python Package Manager) - Install Here: https://pip.pypa.io/en/stable/installing/
+* Django 2.1 - Install later in this tutorial (See "Setup Guide") 
 * more coming soon...
 
 ## Setup Guide
